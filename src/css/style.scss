@@ -1100,7 +1100,7 @@ body.offcanvas .oliven-nav-toggle {
 }
 
 $items: 2;
-$animation-time: 4s;
+$animation-time: 10s;
 $transition-time: 0.5s;
 $scale: 20%;
 
@@ -1132,6 +1132,9 @@ $scale-base-1: (1 + $scale / 100%);
       z-index: ($items - $i);
     }
   }
+}
+.anillo2 {
+  background-size: contain;
 }
 
 @for $i from 1 through $items {

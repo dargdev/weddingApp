@@ -6,7 +6,7 @@ function HeroSection() {
     <div className="hero-section backgorund-image-ken-burns">
       <div className="slideshow">
         <div className="slideshow-image" style={{backgroundImage: `url(${anillo1})`}}></div>
-        <div className="slideshow-image" style={{backgroundImage: `url(${anillo2})`}}></div>
+        <div className="slideshow-image anillo2" style={{backgroundImage: `url(${anillo2})`}}></div>
       </div>
       <div className="container hero-inner h-100">
         <div className="row h-100">
