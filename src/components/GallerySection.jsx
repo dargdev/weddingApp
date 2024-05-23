@@ -1,4 +1,14 @@
+// src/components/GallerySection.js
 import React from 'react';
+import importAll from '../utils/importAllImages';
+import Masonry from 'react-masonry-css';
+
+const images = importAll(require.context('../photos/galleryPhotos', false, /\.(png|jpe?g|svg)$/));
+const breakpointColumnsObj = {
+  default: 3,
+  1100: 2,
+  700: 1
+};
 
 function GallerySection() {
   return (
@@ -19,21 +29,25 @@ function GallerySection() {
         </div>
       </div>
       <div className="container">
-        <div className="row gallery-filter mt-3">
-          <div className="col-md-4 gallery-item ceremony">
-            <a href="images/antesBoda/IMG_0046-min.JPG" className="img-zoom">
-              <div className="gallery-box">
-                <div className="gallery-img">
-                  <img src={require("../images/antesBoda/IMG_0046-min.JPG")} className="img-fluid mx-auto d-block" alt="" />
+        <Masonry
+          breakpointCols={breakpointColumnsObj}
+          className="masonry-grid"
+          columnClassName="masonry-grid_column"
+        >
+          {Object.keys(images).map((key, index) => (
+            <div className="gallery-item" key={index}>
+              <a href={images[key]} className="img-zoom">
+                <div className="gallery-box">
+                  <div className="gallery-img">
+                    <img src={images[key]} className="img-fluid mx-auto d-block" alt={`Gallery Image ${index + 1}`} />
+                  </div>
                 </div>
-              </div>
-            </a>
-          </div>
-          {/* Add more gallery items here */}
-        </div>
+              </a>
+            </div>
+          ))}
+        </Masonry>
       </div>
     </div>
   );
 }
-
 export default GallerySection;
