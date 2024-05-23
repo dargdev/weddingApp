@@ -1,4 +1,3 @@
-// AuthModal.js
 import React, { useState } from 'react';
 import Modal from 'react-modal';
 import { useAuth } from './AuthContext';
