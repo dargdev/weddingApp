@@ -1134,7 +1134,7 @@ $scale-base-1: (1 + $scale / 100%);
   }
 }
 .anillo2 {
-  background-size: contain;
+  background-size: cover;
 }
 
 @for $i from 1 through $items {
