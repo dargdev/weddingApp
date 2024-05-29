@@ -40,14 +40,17 @@ jobs:
         with:
           name: build
           path: build
-      - name: Output SSH Key for Debugging
-        run: echo "${{ secrets.EC2_KEY }}" > my-key.pem
+      - name: Create SSH key file
+        run: |
+          echo "${{ secrets.EC2_KEY }}" > my-key.pem
+          chmod 400 my-key.pem
+
       - name: Copy files via SSH
         uses: appleboy/scp-action@v0.1.2
         with:
           host: ${{ secrets.EC2_HOST }}
           username: ${{ secrets.EC2_USER }}
-          key: ${{ secrets.EC2_KEY }}
+          key: my-key.pem
           source: 'build/*'
           target: '/usr/share/nginx/html/'
 
@@ -56,5 +59,5 @@ jobs:
         with:
           host: ${{ secrets.EC2_HOST }}
           username: ${{ secrets.EC2_USER }}
-          key: ${{ secrets.EC2_KEY }}
+          key: my-key.pem
           script: 'sudo systemctl restart nginx'
