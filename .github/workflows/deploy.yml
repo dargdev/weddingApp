@@ -60,7 +60,6 @@ jobs:
           passphrase: ${{ secrets.EC2_PASSPHRASE }}
           script: |
             sudo mv /home/${{ secrets.EC2_USER }}/build/* /usr/share/nginx/html/
-            sudo rm -rf /home/${{ secrets.EC2_USER }}/build
 
       - name: Restart Nginx
         uses: appleboy/ssh-action@v0.1.4
