@@ -41,6 +41,10 @@ jobs:
           name: build
           path: build
 
+      - name: Verify local build directory
+        run: |
+          echo "Local build directory contents:"
+          ls -l build/
       - name: Copy files to temporary directory on EC2
         uses: appleboy/scp-action@v0.1.2
         with:
