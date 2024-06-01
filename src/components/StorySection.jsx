@@ -18,7 +18,7 @@ function StorySection() {
             <p>Son ya 10 años desde que nos conocimos y es una alegría para nosotros contar nuestra historia. Todo empezó desde aquellas veces en las que coincidimos en nuestro camino al trabajo, donde poco cruzábamos palabras, pero la vida nos daba la oportunidad de estar.</p>
             <p>Un 20 de septiembre de 2020, fue desde cuando contestando una historia de Instagram, empezaba la conquista, aún estando separados por más de 3.000 km aunque de manera virtual, pero así comenzó nuestro acercamiento.</p>
             <p>Oficialmente, el 23 de noviembre de 2020, salimos por primera vez. Que lindo es mirar atrás y recordar tantos bellos momentos, porque ese fue el inicio de una mágica historia, que dio paso a iniciar nuestro noviazgo allá en la reserva Cayambe – Coca el 30 de enero de 2021.</p>
-            <h4>Febrero 10, 2024, Nos comprometimos</h4>
+            <h4>Noviembre 11, 2021, Nos comprometimos</h4>
             <p>Desde entonces, la vida nos ha permitido compartir muchas experiencias creando anécdotas y creciendo como pareja. Fue así como el 11 de noviembre de 2021, Ayrton, buscando el momento especial y una ocasión tal para recordarlo eternamente, preguntó si Luisa quería unir su vida para siempre junto a la de él… Y entonces, ha llegado el momento de celebrar con todos ustedes que forman parte de esta historia bajo la bendición de nuestros padres, Dios y los nuestros.</p>
           </div>
         </div>
