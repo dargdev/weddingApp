@@ -42,6 +42,13 @@ body {
   font-smoothing: antialiased;
 }
 
+$color-background: #faf8f7;
+$color-primary: #ECB390;
+$color-secondary: #FCF8E8;
+
+$size-aside: 22vw;
+$size-main: 78vw;
+
 body {
   font-family: 'Nunito Sans', sans-serif;
   font-size: 15px;
@@ -214,8 +221,8 @@ input[type='reset'],
 input[type='button'],
 button {
   font-family: 'Nunito Sans', sans-serif;
-  background: #bd945a;
-  border: 1px solid #bd945a;
+  background: $color-primary;
+  border: 1px solid $color-primary;
   color: #fff;
   padding: 15px 30px;
   margin: 0;
@@ -289,7 +296,7 @@ input[type='checkbox']:before {
 input[type='checkbox']:after {
   font-family: 'themify';
   content: '\e64c';
-  color: #bd945a;
+  color: $color-primary;
   background: transparent;
   position: absolute;
   top: 1px;
@@ -335,7 +342,7 @@ input[type='radio']:before {
   display: inline-block;
   top: 0px;
   left: -4px;
-  background-image: radial-gradient(circle, #bd945a 50%, #fff 70%);
+  background-image: radial-gradient(circle, $color-primary 50%, #fff 70%);
   background-size: 0;
   background-position: 50% 50%;
   background-repeat: no-repeat;
@@ -415,7 +422,7 @@ input[type='radio']:checked:before {
   border-radius: 50%;
   height: 75px;
   width: 75px;
-  border: 1px solid #bd945a;
+  border: 1px solid $color-primary;
   color: #888;
   font-size: 10px;
   display: flex;
@@ -514,11 +521,11 @@ input[type='radio']:checked:before {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #bd945a;
+  background: $color-primary;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #bd945a;
+  background: $color-primary;
 }
 
 /* ===== Selection ===== */
@@ -554,11 +561,11 @@ input[type='radio']:checked:before {
 
 .owl-theme .owl-dots .owl-dot.active span,
 .owl-theme .owl-dots .owl-dot:hover span {
-  background: #bd945a;
+  background: $color-primary;
 }
 
 .owl-theme .owl-nav [class*='owl-'] {
-  background-color: #bd945a;
+  background-color: $color-primary;
   width: 30px;
   height: 30px;
   line-height: 25px;
@@ -570,7 +577,7 @@ input[type='radio']:checked:before {
   font-size: 12px;
   margin: 5px;
   padding: 4px 7px;
-  background: #bd945a;
+  background: $color-primary;
   display: inline-block;
   cursor: pointer;
   border-radius: 3px;
@@ -588,8 +595,8 @@ input[type='radio']:checked:before {
 
 .owl-theme .owl-nav [class*='owl-']:hover {
   background-color: transparent;
-  border: 1px solid #bd945a;
-  color: #bd945a;
+  border: 1px solid $color-primary;
+  color: $color-primary;
 }
 
 /* ===== Sidebar style ===== */
@@ -602,14 +609,14 @@ input[type='radio']:checked:before {
 
 .oliven-aside {
   padding: 60px 30px;
-  width: 22vw;
+  width: $size-aside;
   position: fixed;
   bottom: 0;
   top: 0;
   left: 0;
   overflow-y: scroll;
   z-index: 1001;
-  background: #f6f1f0;
+  background: $color-background;
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s;
@@ -731,7 +738,7 @@ input[type='radio']:checked:before {
 .oliven-aside .oliven-logo a span {
   display: block;
   font-size: 36px;
-  color: #bd945a;
+  color: $color-primary;
   font-family: 'Alex Brush', cursive;
   font-weight: 400;
   display: block;
@@ -781,13 +788,13 @@ input[type='radio']:checked:before {
 }
 
 .oliven-aside .oliven-main-menu ul li a:hover {
-  border-bottom: 1px solid #bd945a;
+  border-bottom: 1px solid $color-primary;
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
 }
 
 .oliven-aside .oliven-main-menu ul li.oliven-active a {
-  color: #bd945a;
+  color: $color-primary;
 }
 
 .oliven-aside .oliven-main-menu ul li.oliven-active a:after {
@@ -822,7 +829,7 @@ input[type='radio']:checked:before {
 }
 
 .oliven-aside .footer1 a {
-  color: #bd945a;
+  color: $color-primary;
 }
 
 .oliven-aside .separator {
@@ -844,7 +851,7 @@ input[type='radio']:checked:before {
 /* ===== Main style ===== */
 
 .oliven-main {
-  width: 78vw;
+  width: $size-main;
   float: right;
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
@@ -985,7 +992,7 @@ input[type='radio']:checked:before {
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s;
-  background: #bd945a;
+  background: $color-primary;
   margin: 15px 30px;
   border-radius: 50%;
 }
@@ -1033,7 +1040,7 @@ body.offcanvas .oliven-nav-toggle {
   position: relative;
   -webkit-box-align: center;
   -ms-flex-align: center;
-  align-items: center;
+  align-items: flex-end;
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
@@ -1051,12 +1058,13 @@ body.offcanvas .oliven-nav-toggle {
 .hero-inner {
   position: relative;
   z-index: 15;
+  height: 30vh;
 }
 
 .hero-title-modal {
   display: block;
   font-size: 36px;
-  color: #bd945a;
+  color: $color-primary;
   font-family: 'Alex Brush', cursive;
   font-weight: 400;
   display: block;
@@ -1069,7 +1077,7 @@ body.offcanvas .oliven-nav-toggle {
   font-weight: 400;
   margin: 0 0 15px 0;
   font-size: 120px;
-  color: #fff;
+  color: $color-background;
   display: block;
   line-height: 1em;
   position: relative;
@@ -1100,17 +1108,22 @@ body.offcanvas .oliven-nav-toggle {
 }
 
 $items: 2;
-$animation-time: 10s;
+$animation-time: 6s;
 $transition-time: 0.5s;
-$scale: 20%;
+$scale: 35%;
 
 $total-time: ($animation-time * $items);
 $scale-base-1: (1 + $scale / 100%);
 .slideshow {
   position: absolute;
-  width: 100vw;
+  width: $size-main;
   height: 100vh;
   overflow: hidden;
+}
+@media screen and (max-width: 1200px) {
+  .slideshow {
+    width: 100vw;
+  }
 }
 
 .slideshow-image {
@@ -1132,9 +1145,6 @@ $scale-base-1: (1 + $scale / 100%);
       z-index: ($items - $i);
     }
   }
-}
-.anillo2 {
-  background-size: cover;
 }
 
 @for $i from 1 through $items {
@@ -1261,7 +1271,7 @@ $scale-base-1: (1 + $scale / 100%);
   font-family: 'Alex Brush', cursive;
   font-weight: 400;
   font-size: 30px;
-  color: #bd945a;
+  color: $color-primary;
   line-height: 1.25em;
   margin-bottom: 10px;
 }
@@ -1273,7 +1283,7 @@ $scale-base-1: (1 + $scale / 100%);
   font-family: 'Alex Brush', cursive;
   font-weight: 400;
   font-size: 60px;
-  color: #bd945a;
+  color: $color-primary;
   line-height: 1.5em;
   margin-bottom: 5px;
 }
@@ -1293,7 +1303,7 @@ $scale-base-1: (1 + $scale / 100%);
   font-family: 'Alex Brush', cursive;
   font-weight: 400;
   font-size: 30px;
-  color: #bd945a;
+  color: $color-primary;
   line-height: 1.5em;
   margin-bottom: 10px;
 }
@@ -1326,12 +1336,12 @@ $scale-base-1: (1 + $scale / 100%);
 }
 
 .bridegroom .info h6 i {
-  color: #bd945a;
+  color: $color-primary;
   font-size: 16px;
 }
 
 .bridegroom .info span {
-  color: #bd945a;
+  color: $color-primary;
   font-size: 24px;
   font-weight: 400;
   font-family: 'Alex Brush', cursive;
@@ -1358,8 +1368,8 @@ $scale-base-1: (1 + $scale / 100%);
 }
 
 .bridegroom .info .social a:hover {
-  background-color: #bd945a;
-  border-color: #bd945a;
+  background-color: $color-primary;
+  border-color: $color-primary;
   color: #fff;
 }
 
@@ -1396,7 +1406,7 @@ $scale-base-1: (1 + $scale / 100%);
 #countdown {
   text-align: center;
   background-image: url(../photos/mirador-mera.jpg);
-  background-size: 78vw;
+  background-size: $size-main;
   background-position: right;
 }
 
@@ -1490,7 +1500,7 @@ $scale-base-1: (1 + $scale / 100%);
   right: 0;
   left: 45px;
   bottom: 0;
-  border: 10px solid #bd945a;
+  border: 10px solid $color-primary;
 }
 
 .story .story-img .img img {
@@ -1628,7 +1638,7 @@ $scale-base-1: (1 + $scale / 100%);
 }
 
 .friends .info span {
-  color: #bd945a;
+  color: $color-primary;
   font-size: 24px;
   font-weight: 400;
   font-family: 'Alex Brush', cursive;
@@ -1673,7 +1683,7 @@ $scale-base-1: (1 + $scale / 100%);
 .organization .item-box {
   padding: 60px 30px;
   background-color: #fff;
-  border: 1px solid #f6f1f0;
+  border: 1px solid $color-background;
   border-right: 0;
   -webkit-transition: all 0.4s;
   -o-transition: all 0.4s;
@@ -1681,7 +1691,7 @@ $scale-base-1: (1 + $scale / 100%);
 }
 
 .organization .item-box:last-of-type {
-  border-right: 1px solid #f6f1f0;
+  border-right: 1px solid $color-background;
 }
 
 .organization .item-box:hover {
@@ -1701,7 +1711,7 @@ $scale-base-1: (1 + $scale / 100%);
   font-size: 75px;
   margin-bottom: 15px;
   color: transparent;
-  -webkit-text-stroke: 1px #bd945a;
+  -webkit-text-stroke: 1px $color-primary;
 }
 
 .organization .item-box .title {
@@ -1848,7 +1858,7 @@ $scale-base-1: (1 + $scale / 100%);
 }
 
 .whenwhere .item .content .tag a:hover {
-  color: #bd945a;
+  color: $color-primary;
 }
 
 .whenwhere .item .content h5 {
@@ -1859,7 +1869,7 @@ $scale-base-1: (1 + $scale / 100%);
 }
 
 .whenwhere .item .content p i {
-  color: #bd945a;
+  color: $color-primary;
 }
 
 .whenwhere-entry {
@@ -1969,8 +1979,8 @@ $scale-base-1: (1 + $scale / 100%);
 }
 .buttono a {
   font-family: 'Nunito Sans', sans-serif;
-  background: #bd945a;
-  border: 1px solid #bd945a;
+  background: $color-primary;
+  border: 1px solid $color-primary;
   color: #fff;
   padding: 10px 20px;
   margin: 0;
@@ -2116,7 +2126,7 @@ $scale-base-1: (1 + $scale / 100%);
   position: absolute;
   width: 26px;
   height: 26px;
-  background: #bd945a;
+  background: $color-primary;
   animation: lds-heart 1.2s infinite cubic-bezier(0.215, 0.61, 0.355, 1);
 }
 
@@ -2127,7 +2137,7 @@ $scale-base-1: (1 + $scale / 100%);
   display: block;
   width: 26px;
   height: 26px;
-  background: #bd945a;
+  background: $color-primary;
 }
 
 .lds-heart div:before {
@@ -2275,7 +2285,7 @@ $scale-base-1: (1 + $scale / 100%);
 }
 .blog-page .post-cont .tag:hover,
 .blog-page .post-cont .date:hover {
-  color: #bd945a;
+  color: $color-primary;
 }
 .blog-page .post-cont h5 {
   font-size: 27px;
@@ -2285,7 +2295,7 @@ $scale-base-1: (1 + $scale / 100%);
   color: #000;
 }
 .blog-page .post-cont h5 a:hover {
-  color: #bd945a;
+  color: $color-primary;
 }
 .blog-page .post-cont .info {
   margin-top: 0px;
@@ -2316,16 +2326,16 @@ $scale-base-1: (1 + $scale / 100%);
   margin-bottom: 10px;
 }
 .blog-sidebar .widget ul li:hover {
-  color: #bd945a;
+  color: $color-primary;
 }
 .blog-sidebar .widget ul li a {
   color: #888;
 }
 .blog-sidebar .widget ul li a.active {
-  color: #bd945a;
+  color: $color-primary;
 }
 .blog-sidebar .widget ul li a:hover {
-  color: #bd945a;
+  color: $color-primary;
 }
 .blog-sidebar .widget ul li:last-child {
   margin-bottom: 0;
@@ -2393,7 +2403,7 @@ $scale-base-1: (1 + $scale / 100%);
 .blog-sidebar ul.tags li:hover,
 .blog-sidebar ul.tags li a:hover {
   color: #fff;
-  background-color: #bd945a;
+  background-color: $color-primary;
 }
 .blog-comment-section {
   padding-top: 60px;
@@ -2460,13 +2470,13 @@ $scale-base-1: (1 + $scale / 100%);
 .blog-pagination-wrap li a:hover {
   opacity: 1;
   text-decoration: none;
-  background-color: #bd945a;
-  border: 1px solid #bd945a;
+  background-color: $color-primary;
+  border: 1px solid $color-primary;
   color: #fff;
 }
 .blog-pagination-wrap li a.active {
-  background-color: #bd945a;
-  border: 1px solid #bd945a;
+  background-color: $color-primary;
+  border: 1px solid $color-primary;
   color: #fff;
 }
 .blog-pagination-wrap li a i {
@@ -2503,7 +2513,7 @@ $scale-base-1: (1 + $scale / 100%);
   box-shadow: rgba(112, 128, 175, 0.2) 0px 16px 24px 0px;
   transform: scale(0);
   transition: transform 300ms cubic-bezier(0.57, 0.21, 0.69, 1.25);
-  background-color: #f6f1f0;
+  background-color: $color-background;
   overflow: hidden;
 }
 
@@ -2636,8 +2646,8 @@ $scale-base-1: (1 + $scale / 100%);
   margin-bottom: 10px;
   border: 1px solid #ccc;
   border-radius: 4px;
-  color: #bd945a;
-  outline-color: #bd945a;
+  color: $color-primary;
+  outline-color: $color-primary;
   ::placeholder{
     align-items: center;
     align-content: center;
@@ -2648,14 +2658,14 @@ $scale-base-1: (1 + $scale / 100%);
 .auth-modal button {
   padding: 10px 20px;
   border: none;
-  background-color: #bd945a;
+  background-color: $color-primary;
   color: white;
   border-radius: 4px;
   cursor: pointer;
 }
 
 .auth-modal button:hover {
-  background-color: #bd945a;
+  background-color: $color-primary;
 }
 
 .blur {

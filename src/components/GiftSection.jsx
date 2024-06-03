@@ -19,8 +19,8 @@ function GiftSection() {
               <p className="bank-info"><b>Banco:</b> Pichincha</p>
               <p className="bank-info"><b>Cuenta:</b> Ahorros</p>
               <p className="bank-info"><b>Número:</b> 2206811798</p>
-              <p className="bank-info"><b>Cédula de identidad:</b> 1719033639</p>
-              <p className="bank-info"><b>Correo electrónico:</b> apazminol@hotmail.com</p>
+              <p className="bank-info"><b>Cédula de identidad:</b> 17690763</p>
+              <p className="bank-info"><b>Correo electrónico:</b> dargruano@gmail.com</p>
               <p className="bank-info"><b>Nombre:</b> David Ruano</p>
             </div>
           </div>
