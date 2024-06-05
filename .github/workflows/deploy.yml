@@ -59,6 +59,8 @@ jobs:
           key: ${{ secrets.EC2_KEY }}
           passphrase: ${{ secrets.EC2_PASSPHRASE }}
           script: |
+            sudo rm -rf /usr/share/nginx/html/static
+            sudo mv /home/${{ secrets.EC2_USER }}/build/static /usr/share/nginx/html/static
             sudo mv /home/${{ secrets.EC2_USER }}/build/* /usr/share/nginx/html/
             sudo rm -rf /home/${{ secrets.EC2_USER }}/build
 
