@@ -23,6 +23,7 @@ import Footer from './components/Footer';
 import AuthModal from './auth/AuthModal';
 import { AuthProvider, useAuth } from './auth/AuthContext'; // Ensure this path is correct
 import SeeYouSection from './components/SeeYouSection';
+import { Ticket } from './components/Ticket/Ticket';
 
 const ProtectedApp = () => {
   const { isAuthenticated } = useAuth();
@@ -42,6 +43,7 @@ const ProtectedApp = () => {
               <SeeYouSection />
               <RSVPSection />
               <FriendsSection />
+              <Ticket />
               <GiftSection />
               <GallerySection />
               <Footer />

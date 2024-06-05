@@ -39,8 +39,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   -moz-font-smoothing: antialiased;
-  font-smoothing: antialiased;
-}
+  }
 
 $color-background: #faf8f7;
 $color-primary: #ECB390;
@@ -447,8 +446,8 @@ input[type='radio']:checked:before {
 }
 
 .section-padding {
-  padding-top: 100px;
-  padding-bottom: 100px;
+  padding-top: 295px;
+  padding-bottom: 90px;
 }
 
 .js .animate-box {
@@ -1104,8 +1103,7 @@ body.offcanvas .oliven-nav-toggle {
     font-size: 15px;
   }
 }
-#home .vegas-overlay {
-}
+
 #home .hero-inner .row {
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -1833,11 +1831,8 @@ $scale-base-1: (1 + $scale / 100%);
 .img-zoom:hover img {
   transform: scale(1.1);
 }
+
 /* ===== When & Where style ===== */
-
-.whenwhere .item {
-}
-
 .whenwhere .item .whenwhere-img {
   position: relative;
   overflow: hidden;
