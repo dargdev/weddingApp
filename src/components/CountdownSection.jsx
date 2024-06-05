@@ -10,10 +10,10 @@ function CountdownSection() {
 
     if (difference > 0) {
       timeLeft = {
-        days: Math.floor(difference / (1000 * 60 * 60 * 24)),
-        hours: Math.floor((difference / (1000 * 60 * 60)) % 24),
-        minutes: Math.floor((difference / 1000 / 60) % 60),
-        seconds: Math.floor((difference / 1000) % 60),
+        dias: Math.floor(difference / (1000 * 60 * 60 * 24)).toString().padStart(2, '0'),
+        horas: Math.floor((difference / (1000 * 60 * 60)) % 24).toString().padStart(2, '0'),
+        minutos: Math.floor((difference / 1000 / 60) % 60).toString().padStart(2, '0'),
+        segundos: Math.floor((difference / 1000) % 60).toString().padStart(2, '0'),
       };
     }
 
@@ -47,7 +47,7 @@ function CountdownSection() {
   });
   return (
     <div id="countdown" className="section-padding bg-img bg-fixed countdown">
-      <div className="container">
+      <div className="countdown-container">
         <div className="row">
           <div className="section-head col-md-12">
             <h4>Seremos una familia en</h4>

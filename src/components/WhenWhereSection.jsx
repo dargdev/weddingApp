@@ -12,27 +12,27 @@ function WhenWhereSection() {
         <div className="row">
           <div className="item col-md-4 col-sm-12">
             <div className="whenwhere-img">
-              <img src={require("../images/whenwhere/3.jpg")} alt="" />
+              <img src={require("../images/whenwhere/ceremonia.jpeg")} alt="" />
             </div>
             <div className="content">
               <h5>Ceremonia eclesiástica</h5>
-              <p><i className="ti-location-pin"></i> Iglesia Católica Sagrado Corazón de Jesús - La Armenia</p>
-              <p><i className="ti-time"></i> <span> 11:45 – 13:30</span></p>
+              <p><i className="ti-location-pin"></i> Parroquia Nuestra Señora del Cisne </p>
+              <p><i className="ti-time"></i> <span> 10:45</span></p>
               <span className="oliven-title-meta">
-                <a href="https://goo.gl/maps/9P9qMkZwwrqA4nzY8" target="_blank" rel="noopener noreferrer">Ver dirección</a>
+                <a href="https://maps.app.goo.gl/YxbixZ9GBuJZMz9RA" target="_blank" rel="noopener noreferrer">Ver dirección</a>
               </span>
             </div>
           </div>
           <div className="item col-md-4 col-sm-12">
             <div className="whenwhere-img">
-              <img src={require("../images/whenwhere/1.jpg")} alt="" />
+              <img src={require("../images/whenwhere/decoration.jpeg")} alt="" />
             </div>
             <div className="content">
               <h5>Recepción</h5>
-              <p><i className="ti-location-pin"></i> Urbanización Los Chillos, Club "Los Chillos"</p>
-              <p><i className="ti-time"></i> <span> 14:00 – 20:30</span></p>
+              <p><i className="ti-location-pin"></i> Villa Ana Lucía</p>
+              <p><i className="ti-time"></i> <span> 13:00</span></p>
               <span className="oliven-title-meta">
-                <a href="https://g.page/clubloschillos?share" target="_blank" rel="noopener noreferrer">Ver dirección</a>
+                <a href="https://maps.app.goo.gl/JafTybPKGVUfuJNm6" target="_blank" rel="noopener noreferrer">Ver dirección</a>
               </span>
             </div>
           </div>
@@ -43,7 +43,7 @@ function WhenWhereSection() {
             <div className="content">
               <h5>Luna de miel</h5>
               <p><i className="ti-direction-alt"></i> ¡¡Sorpresa!!</p>
-              <p><i className="ti-direction"></i> 04/09 – 13/09</p>
+              <p><i className="ti-direction"></i> </p>
               <br />
               <span className="oliven-title-meta">Próximamente</span>
             </div>

@@ -7,10 +7,10 @@ function GiftSection() {
         <div className="row">
           <div className="col-md-12 mb-30">
             <br />
-            <span className="oliven-title-meta" style={{ textAlign: 'center' }}>Agradecemos tu gentileza</span>
+            <span className="oliven-title-meta" style={{ textAlign: 'center' }}>Agradecemos tú gentileza</span>
             <br />
             <div className="row" style={{ justifyContent: 'center', alignItems: 'center' }}>
-              <p className="agradecemos">Tu presencia es el mejor regalo pero si quieres tener un detalle con nosotros nos puedes apoyar a esta cuenta:</p>
+              <p className="agradecemos">Tú presencia es el mejor regalo pero si quieres tener un detalle con nosotros nos puedes apoyar a esta cuenta, tú generosidad será recordada con gratitud</p>
             </div>
             <div className="oliven-logo">
               <img src={require("../images/logo.png")} alt="" />
@@ -18,10 +18,10 @@ function GiftSection() {
             <div style={{ fontFamily: 'Alex Brush, cursive' }}>
               <p className="bank-info"><b>Banco:</b> Pichincha</p>
               <p className="bank-info"><b>Cuenta:</b> Ahorros</p>
-              <p className="bank-info"><b>Número:</b> 2206811798</p>
-              <p className="bank-info"><b>Cédula de identidad:</b> 17690763</p>
-              <p className="bank-info"><b>Correo electrónico:</b> dargruano@gmail.com</p>
-              <p className="bank-info"><b>Nombre:</b> David Ruano</p>
+              <p className="bank-info"><b>Número:</b> 2211819036</p>
+              <p className="bank-info"><b>Cédula de identidad:</b> 0401872288</p>
+              <p className="bank-info"><b>Correo electrónico:</b> arimera14@gmail.com</p>
+              <p className="bank-info"><b>Nombre:</b> Ariana Mera</p>
             </div>
           </div>
         </div>
