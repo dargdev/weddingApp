@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from 'react';
+import React, { useEffect, useState } from 'react';
 
 function CountdownSection() {
   const calculateTimeLeft = () => {
@@ -10,10 +10,18 @@ function CountdownSection() {
 
     if (difference > 0) {
       timeLeft = {
-        dias: Math.floor(difference / (1000 * 60 * 60 * 24)).toString().padStart(2, '0'),
-        horas: Math.floor((difference / (1000 * 60 * 60)) % 24).toString().padStart(2, '0'),
-        minutos: Math.floor((difference / 1000 / 60) % 60).toString().padStart(2, '0'),
-        segundos: Math.floor((difference / 1000) % 60).toString().padStart(2, '0'),
+        dias: Math.floor(difference / (1000 * 60 * 60 * 24))
+          .toString()
+          .padStart(2, '0'),
+        horas: Math.floor((difference / (1000 * 60 * 60)) % 24)
+          .toString()
+          .padStart(2, '0'),
+        minutos: Math.floor((difference / 1000 / 60) % 60)
+          .toString()
+          .padStart(2, '0'),
+        segundos: Math.floor((difference / 1000) % 60)
+          .toString()
+          .padStart(2, '0'),
       };
     }
 
@@ -30,23 +38,23 @@ function CountdownSection() {
     return () => clearTimeout(timer);
   }, [timeLeft]);
 
-  const timerComponents = Object.keys(timeLeft).map((interval) => {
+  const timerComponents = Object.keys(timeLeft).map(interval => {
     if (!timeLeft[interval]) {
       return null;
     }
 
     return (
       <li key={interval}>
-        <span>
-          {timeLeft[interval]}
-        </span>
+        <span>{timeLeft[interval]}</span>
         {interval}
       </li>
-
     );
   });
   return (
-    <div id="countdown" className="section-padding bg-img bg-fixed countdown">
+    <div
+      id="countdown"
+      className="section-padding-countdown bg-img bg-fixed countdown"
+    >
       <div className="countdown-container">
         <div className="row">
           <div className="section-head col-md-12">
@@ -56,7 +64,11 @@ function CountdownSection() {
         <div className="row">
           <div className="col-md-12">
             <ul>
-              {timerComponents.length ? timerComponents : <span>Time's up!</span>}
+              {timerComponents.length ? (
+                timerComponents
+              ) : (
+                <span>Time's up!</span>
+              )}
             </ul>
           </div>
         </div>

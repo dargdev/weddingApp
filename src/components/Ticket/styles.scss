@@ -1,8 +1,11 @@
 .ticket {
-    background-image: url(../../photos/ticket.webp);
+    background-image: url(../../photos/ticket-removebg.png);
     background-size: cover;
-    background-position: center;
-    height: 35vh;
+    background-position: center center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    height: 48vh;
+    width: 50%;
+    margin: auto;
     .ticket-content {
         display: flex;
         flex-direction: column;
@@ -10,22 +13,36 @@
         height: 100%;
         width: 100%;
         justify-content: center;
-        span{
+        span, p{
             font-family: "Alex Brush", cursive;
             font-weight: 400;
             color: #000;
-            font-size: large;
-            line-height: 1;
+            font-size: 1.6rem;
+            line-height: 1.6rem;
             margin-left: 10px;
         }
         p{
-            color: #000;
-            font-size: 20px;
-            font-weight: 600;
-            font-family: "Cormorant Garamond", serif;
-            margin:0;
+            font-size: 1rem;
+            margin: 0;
         }
     }
 
 }
+
+@media all and (max-width: 768px) {
+    .ticket {
+        height: 38vh;
+        width: 100%;  
+        .ticket-content {
+            span, p{
+                font-size: 1rem;
+                line-height: 1.2rem;
+            }
+            p{
+                font-size: 0.8rem;
+            }
+        }
+    
+    }
+  }
   

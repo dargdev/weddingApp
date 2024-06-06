@@ -16,7 +16,6 @@ import CountdownSection from './components/CountdownSection';
 import StorySection from './components/StorySection';
 import WhenWhereSection from './components/WhenWhereSection';
 import RSVPSection from './components/RSVPSection';
-import FriendsSection from './components/FriendsSection';
 import GiftSection from './components/GiftSection';
 import GallerySection from './components/GallerySection';
 import Footer from './components/Footer';
@@ -42,7 +41,7 @@ const ProtectedApp = () => {
               <WhenWhereSection />
               <SeeYouSection />
               <RSVPSection />
-              <FriendsSection />
+              {/* <FriendsSection /> */}
               <Ticket />
               <GiftSection />
               <GallerySection />

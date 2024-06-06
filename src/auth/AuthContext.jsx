@@ -1,28 +1,30 @@
 // src/auth/AuthContext.js
 import React, { createContext, useState, useContext, useEffect } from 'react';
+import { guests } from '../utils/guests';
 
 const AuthContext = createContext();
 
 export const AuthProvider = ({ children }) => {
   const [isAuthenticated, setIsAuthenticated] = useState(false);
-  const [invited, setInvited] = useState(null);
+  const [guest, setGuest] = useState(null);
 
   useEffect(() => {
     // Check localStorage for stored session
     const storedSession = JSON.parse(localStorage.getItem('session'));
     if (storedSession && storedSession.invited) {
+      const guest = guests.find(guest => guest.phone === storedSession.invited);
       setIsAuthenticated(true);
-      setInvited(storedSession.invited);
+      setGuest(guest);
     }
   }, []);
 
-  const authenticate = (phone) => {
+  const authenticate = phone => {
     // List of authorized phone numbers
-    const authorizedNumbers = ['0998726121', '0982826033']; // Add the authorized phone numbers here
+    const guest = guests.find(guest => guest.phone === phone);
 
-    if (authorizedNumbers.includes(phone)) {
+    if (guest) {
       setIsAuthenticated(true);
-      setInvited(phone);
+      setGuest(guest);
       localStorage.setItem('session', JSON.stringify({ invited: phone }));
     } else {
       alert('Phone number not authorized');
@@ -31,12 +33,14 @@ export const AuthProvider = ({ children }) => {
 
   const logout = () => {
     setIsAuthenticated(false);
-    setInvited(null);
+    setGuest(null);
     localStorage.removeItem('session');
   };
 
   return (
-    <AuthContext.Provider value={{ isAuthenticated, invited, authenticate, logout }}>
+    <AuthContext.Provider
+      value={{ isAuthenticated, guest, authenticate, logout }}
+    >
       {children}
     </AuthContext.Provider>
   );

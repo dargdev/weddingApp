@@ -44,6 +44,7 @@ body {
 $color-background: #faf8f7;
 $color-primary: #ECB390;
 $color-secondary: #FCF8E8;
+$color-black: #000;
 
 $size-aside: 22vw;
 $size-main: 78vw;
@@ -446,8 +447,8 @@ input[type='radio']:checked:before {
 }
 
 .section-padding {
-  padding-top: 295px;
-  padding-bottom: 90px;
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
 
 .js .animate-box {
@@ -1425,8 +1426,14 @@ $scale-base-1: (1 + $scale / 100%);
     margin-left: auto;
     margin-right: auto;
   }
+
 }
 
+.section-padding-countdown{
+  padding-top: 18rem;
+  padding-bottom: 5rem;
+
+}
 #countdown .section-head {
   margin-bottom: 15px;
   z-index: 1;
@@ -2647,7 +2654,7 @@ $scale-base-1: (1 + $scale / 100%);
   margin-bottom: 10px;
   border: 1px solid #ccc;
   border-radius: 4px;
-  color: $color-primary;
+  color: $color-black;
   outline-color: $color-primary;
   ::placeholder{
     align-items: center;
