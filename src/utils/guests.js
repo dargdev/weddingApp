@@ -13,7 +13,7 @@ export const guests = [
   },
   {
     name: 'Reinaldo Gonzalez',
-    phone: '0998726087',
+    phone: '0998726121',
     personas: 3,
     title: 'Sr. Reinaldo Gonzalez y Familia',
   },

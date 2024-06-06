@@ -162,6 +162,10 @@ td {
   padding: 10px;
 }
 
+.no-background-button {
+  background-color: transparent;
+  border: none;
+}
 /*** form element ***/
 
 /* text field */
@@ -600,7 +604,6 @@ input[type='radio']:checked:before {
 }
 
 /* ===== Sidebar style ===== */
-
 .oliven-page {
   width: 100%;
   overflow: hidden;
@@ -620,12 +623,19 @@ input[type='radio']:checked:before {
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s;
+  transform: translateX(0); /* Default to visible on larger screens */
   scrollbar-width: none;
 }
-
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 768px) {
   .oliven-aside {
+    transform: translateX(-270px);
+    padding-top: 30px;
     width: 30%;
+
+  }
+  
+  .oliven-aside.open {
+    transform: translateX(0);
   }
 }
 
@@ -871,10 +881,20 @@ input[type='radio']:checked:before {
 }
 
 /* ===== Navigation styles ===== */
+.menu-icon{
+  background-image: url(../photos/menu-icon.png);
+  background-size: cover;
+  width: 3.5rem;
+  height: 3.5rem;
+}
 
 .oliven-nav-toggle {
   cursor: pointer;
   text-decoration: none;
+  padding: 0;
+  background-color: transparent;
+  border: none;
+  margin: 1rem;
 }
 
 .oliven-nav-toggle.active i::before,
@@ -894,90 +914,8 @@ input[type='radio']:checked:before {
   border-bottom: none !important;
 }
 
-.oliven-nav-toggle i {
-  position: relative;
-  display: -moz-inline-stack;
-  display: inline-block;
-  zoom: 1;
-  width: 19px;
-  height: 1px;
-  color: #fff;
-  font: bold 14px/0.4 Helvetica;
-  text-transform: uppercase;
-  text-indent: -55px;
-  background: #fff;
-  -webkit-transition: all 0.2s ease-out;
-  -o-transition: all 0.2s ease-out;
-  transition: all 0.2s ease-out;
-  top: -4px;
-}
-
-.oliven-nav-toggle i::before,
-.oliven-nav-toggle i::after {
-  content: '';
-  width: 20px;
-  height: 1px;
-  background: #fff;
-  position: absolute;
-  left: 0;
-  -webkit-transition: 0.2s;
-  -o-transition: 0.2s;
-  transition: 0.2s;
-}
-
-.oliven-nav-toggle.dark i {
-  position: relative;
-  color: #000;
-  background: #000;
-  -webkit-transition: all 0.2s ease-out;
-  -o-transition: all 0.2s ease-out;
-  transition: all 0.2s ease-out;
-}
-
-.oliven-nav-toggle.dark i::before,
-.oliven-nav-toggle.dark i::after {
-  background: #000;
-  -webkit-transition: 0.2s;
-  -o-transition: 0.2s;
-  transition: 0.2s;
-}
-
-.oliven-nav-toggle i::before {
-  top: -7px;
-}
-
-.oliven-nav-toggle i::after {
-  bottom: -7px;
-}
-
-.oliven-nav-toggle:hover i::before {
-  top: -10px;
-}
-
-.oliven-nav-toggle:hover i::after {
-  bottom: -10px;
-}
-
-.oliven-nav-toggle.active i {
-  background: transparent;
-}
-
-.oliven-nav-toggle.active i::before {
-  top: 0;
-  -webkit-transform: rotateZ(45deg);
-  -moz-transform: rotateZ(45deg);
-  -ms-transform: rotateZ(45deg);
-  -o-transform: rotateZ(45deg);
-  transform: rotateZ(45deg);
-}
-
-.oliven-nav-toggle.active i::after {
-  bottom: 0;
-  -webkit-transform: rotateZ(-45deg);
-  -moz-transform: rotateZ(-45deg);
-  -ms-transform: rotateZ(-45deg);
-  -o-transform: rotateZ(-45deg);
-  transform: rotateZ(-45deg);
+.oliven-nav-toggle.active {
+  display: none;
 }
 
 .oliven-nav-toggle {
@@ -986,15 +924,10 @@ input[type='radio']:checked:before {
   top: 0px;
   z-index: 9999;
   cursor: pointer;
-  opacity: 1;
-  visibility: hidden;
-  padding: 12px 15px;
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s;
-  background: $color-primary;
-  margin: 15px 30px;
-  border-radius: 50%;
+
 }
 
 @media screen and (max-width: 768px) {

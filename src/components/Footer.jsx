@@ -10,12 +10,15 @@ function Footer() {
         <div className="row">
           <div className="col-md-12 text-center">
             <h2>
-              <a onClick={logout}>
+              <button
+                className="no-background-button"
+                onDoubleClickCapture={logout}
+              >
                 <img src={require('../images/logo.png')} alt="" />
                 <span>
                   Ariana <small>&</small> David
                 </span>
-              </a>
+              </button>
             </h2>
             <p className="copyright">17 Agosto, 2024 – Quito</p>
           </div>
