@@ -618,24 +618,38 @@ input[type='radio']:checked:before {
   top: 0;
   left: 0;
   overflow-y: scroll;
-  z-index: 1001;
   background: $color-background;
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s;
   transform: translateX(0); /* Default to visible on larger screens */
   scrollbar-width: none;
+
 }
 @media screen and (max-width: 768px) {
   .oliven-aside {
     transform: translateX(-270px);
     padding-top: 30px;
     width: 30%;
+    z-index: 1000;
 
   }
   
   .oliven-aside.open {
     transform: translateX(0);
+  }
+
+  .oliven-aside-container.active{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: opacity 0.3s, visibility 0.3s;
+
+
   }
 }
 
@@ -881,13 +895,6 @@ input[type='radio']:checked:before {
 }
 
 /* ===== Navigation styles ===== */
-.menu-icon{
-  background-image: url(../photos/menu-icon.png);
-  background-size: cover;
-  width: 3.5rem;
-  height: 3.5rem;
-}
-
 .oliven-nav-toggle {
   cursor: pointer;
   text-decoration: none;
@@ -895,16 +902,12 @@ input[type='radio']:checked:before {
   background-color: transparent;
   border: none;
   margin: 1rem;
-}
-
-.oliven-nav-toggle.active i::before,
-.oliven-nav-toggle.active i::after {
-  background: #fff;
-}
-
-.oliven-nav-toggle.dark.active i::before,
-.oliven-nav-toggle.dark.active i::after {
-  background: #000;
+  .oliven-nav-toggle-icon{
+    background-image: url(../photos/menu-icon.png);
+    background-size: cover;
+    width: 3.5rem;
+    height: 3.5rem;
+  }
 }
 
 .oliven-nav-toggle:hover,
@@ -919,19 +922,20 @@ input[type='radio']:checked:before {
 }
 
 .oliven-nav-toggle {
-  position: fixed;
-  left: 0px;
-  top: 0px;
-  z-index: 9999;
-  cursor: pointer;
-  -webkit-transition: 0.5s;
-  -o-transition: 0.5s;
-  transition: 0.5s;
-
+  display: none;
 }
 
 @media screen and (max-width: 768px) {
   .oliven-nav-toggle {
+    display: block;
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    z-index: 9999;
+    cursor: pointer;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
     opacity: 1;
     visibility: visible;
   }
