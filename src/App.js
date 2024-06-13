@@ -20,12 +20,19 @@ import GiftSection from './components/GiftSection';
 import GallerySection from './components/GallerySection';
 import Footer from './components/Footer';
 import AuthModal from './auth/AuthModal';
-import { AuthProvider, useAuth } from './auth/AuthContext'; // Ensure this path is correct
+import { AuthProvider, useAuth } from './auth/AuthContext'; // Asegúrate de que esta ruta sea correcta
 import SeeYouSection from './components/SeeYouSection';
 import { Ticket } from './components/Ticket/Ticket';
+import { BrowserRouter as Router, useLocation } from 'react-router-dom';
+
+function useQuery() {
+  return new URLSearchParams(useLocation().search);
+}
 
 const ProtectedApp = () => {
   const { isAuthenticated } = useAuth();
+  let query = useQuery();
+  let paramValue = query.get('param');
 
   return (
     <div className="oliven-page">
@@ -40,9 +47,8 @@ const ProtectedApp = () => {
               <StorySection />
               <WhenWhereSection />
               <SeeYouSection />
-              <RSVPSection />
-              {/* <FriendsSection /> */}
               <Ticket />
+              <RSVPSection />
               <GiftSection />
               <GallerySection />
               <Footer />
@@ -50,7 +56,7 @@ const ProtectedApp = () => {
           )}
         </div>
       </div>
-      {!isAuthenticated && <AuthModal />}
+      {!isAuthenticated && <AuthModal phoneParam={paramValue} />}
     </div>
   );
 };
@@ -58,8 +64,11 @@ const ProtectedApp = () => {
 function App() {
   return (
     <AuthProvider>
-      <ProtectedApp />
+      <Router>
+        <ProtectedApp />
+      </Router>
     </AuthProvider>
   );
 }
+
 export default App;

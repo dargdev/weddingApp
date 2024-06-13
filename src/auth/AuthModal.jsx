@@ -4,9 +4,9 @@ import { useAuth } from './AuthContext';
 
 Modal.setAppElement('#root');
 
-const AuthModal = () => {
+const AuthModal = ({ phoneParam = '' }) => {
   const { authenticate, isAuthenticated } = useAuth();
-  const [phone, setPhone] = useState('');
+  const [phone, setPhone] = useState(phoneParam);
   const [modalIsOpen, setModalIsOpen] = useState(true);
 
   const handleSubmit = e => {
@@ -20,6 +20,13 @@ const AuthModal = () => {
       setModalIsOpen(true);
     }
   }, [isAuthenticated]);
+
+  useEffect(() => {
+    if(phoneParam){
+      authenticate(phone);
+    }
+  }, [])
+  
 
   return (
     <Modal

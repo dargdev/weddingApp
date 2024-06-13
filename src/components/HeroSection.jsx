@@ -1,5 +1,5 @@
 import React from 'react';
-import anillo1 from '../photos/anillo-1.jpeg';
+import anillo1 from '../photos/anillo-4.jpeg';
 import anillo2 from '../photos/anillo-2.jpeg';
 function HeroSection() {
   return (

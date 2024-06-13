@@ -55,12 +55,12 @@ function CoupleSection() {
                   </h6>
                   <span>El novio</span>
                   <p>
-                    David es una persona noble, inteligente, responsable, Me
-                    siento muy afortunada de tener a mi lado.
-                  </p>
-                  <p>
-                    Ayrtiton, dicen que la vida se vive una sola vez y no puedo
-                    esperar a comenzar a vivir esta aventura a tu lado.
+                    David es una persona con un corazón gigante, es muy noble,
+                    inteligente, responsable y muy bondadoso. Me siento muy
+                    afortunada por su presencia y amor en mi vida, y estoy
+                    agradecida por cada momento que compartimos juntos. Su apoyo
+                    constante y su cariño incondicional hacen que cada día a su
+                    lado sea especial.
                   </p>
                   <p>Con cariño: Tu futura esposa.</p>
                 </div>
