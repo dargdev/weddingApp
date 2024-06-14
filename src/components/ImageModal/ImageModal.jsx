@@ -1,11 +1,20 @@
 // src/components/ImageModal/ImageModal.jsx
-import React from 'react';
+import React, { useEffect } from 'react';
 import Modal from 'react-modal';
 import './ImageModal.scss';
 
 Modal.setAppElement('#root');
 
 const ImageModal = ({ isOpen, onRequestClose, imgSrc }) => {
+
+  useEffect(() => {
+    if (isOpen) {
+      document.body.classList.add('no-scroll');
+    } else {
+      document.body.classList.remove('no-scroll');
+    }
+  }, [isOpen]);
+
   return (
     <Modal
       isOpen={isOpen}

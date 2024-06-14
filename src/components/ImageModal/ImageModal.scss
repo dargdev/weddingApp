@@ -1,5 +1,9 @@
-// src/components/ImageModal/ImageModal.scss
-.image-modal-overlay {
+/* src/components/ImageModal/ImageModal.scss */
+.no-scroll {
+    overflow: hidden;
+  }
+  
+  .image-modal-overlay {
     position: fixed;
     top: 0;
     left: 0;
@@ -9,7 +13,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    z-index: 1000;
+    z-index: 4000;
   }
   
   .image-modal-content {
@@ -41,12 +45,14 @@
     cursor: pointer;
     z-index: 1001; /* Asegúrate de que el botón esté por encima de otros elementos */
     transition: transform 0.3s ease, color 0.3s ease; /* Añade una transición suave */
+    outline: none; /* Elimina el recuadro de enfoque */
   }
   
   .image-modal-close:hover {
     transform: scale(2); /* Escala el botón al pasar el ratón sobre él */
     color: white; /* Asegúrate de que el color permanezca blanco */
   }
+  
   .image-modal-close:focus {
     outline: none; /* Elimina el recuadro de enfoque */
   }
