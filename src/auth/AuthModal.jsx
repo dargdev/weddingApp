@@ -25,6 +25,7 @@ const AuthModal = ({ phoneParam = '' }) => {
     if(phoneParam){
       authenticate(phone);
     }
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [])
   
 
