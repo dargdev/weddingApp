@@ -28,6 +28,10 @@ function GallerySection() {
   return (
     <div id="gallery" className="organization section-padding bg-pink">
       <div className="container">
+        <span className="oliven-title-meta" style={{ textAlign: 'center' }}>
+          Galeria
+        </span>
+
         <Masonry
           breakpointCols={breakpointColumnsObj}
           className="masonry-grid"

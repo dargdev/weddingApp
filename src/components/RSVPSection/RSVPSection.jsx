@@ -1,15 +1,39 @@
 import React from 'react';
+import './RSVPSection.scss';
+
+import iconList from '../../icons/lista.png'; // Adjust the path as needed
 
 function RSVPSection() {
+  const phoneNumber = '+593998726121'; // Reemplaza con tu número de teléfono
+  const message = 'Hola, confirmo mi asistencia a la boda.'; // Mensaje predefinido
+
+  const handleClick = () => {
+    const encodedMessage = encodeURIComponent(message);
+    const whatsappLink = `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
+    window.open(whatsappLink, '_blank');
+  };
   return (
-    <div id="rsvp" className="section-padding bg-img bg-fixed" data-background="images/banner-2.jpg">
+    <div className="rsvp section-padding bg-img bg-fixed">
       <div className="container">
         <div className="row">
-          <div className="col-md-6 offset-md-3 bg-white p-40">
-            <span className="oliven-title-meta text-center">¿Nos acompañas en nuestro</span>
-            <span className="oliven-title-meta text-center">día más importante?</span>
+          <div className="bg-blur">
+            <span className="oliven-title-meta text-center">
+              ¿Nos acompañas en nuestro
+            </span>
+            <span className="oliven-title-meta text-center">
+              día más importante?
+            </span>
             <br />
-            <form className="contact__form" method="post" action="mail.php">
+            <div className="confirm-buton" onClick={handleClick}>
+              <span>Confirma tu asistencia</span>
+              <img
+                src={iconList}
+                alt="Icon"
+                style={{ width: '40px', height: '40px' }}
+              />
+            </div>
+
+            {/* <form className="contact__form" method="post" action="mail.php">
               <div className="row">
                 <div className="col-12">
                   <div className="alert alert-success contact__msg" style={{ display: 'none' }} role="alert" id="alert-message">
@@ -39,7 +63,7 @@ function RSVPSection() {
                   </div>
                 </div>
               </div>
-            </form>
+            </form> */}
           </div>
         </div>
       </div>

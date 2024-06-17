@@ -1,0 +1,28 @@
+@import '/src/css/variables';
+
+.rsvp{
+    font-family: 'Cormorant Garamond', serif;
+    background-image: url(../../images/banner-2.jpg);
+    background-position: 50%;
+    .bg-blur{
+        background: rgba(255, 255, 255, 0.2);
+        backdrop-filter: blur(5px);
+        margin: auto;
+        padding: 4vw 8vw;
+    }
+    .confirm-buton{
+        background-color: $color-background;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem;
+        border-radius: 5px;
+        margin: auto;
+        font-weight: 600;
+        font-size: 18px;
+    }
+    
+    .confirm-buton:hover{
+        background-color: $color-primary;
+    }
+}

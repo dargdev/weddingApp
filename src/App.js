@@ -15,7 +15,7 @@ import CoupleSection from './components/CoupleSection';
 import CountdownSection from './components/CountdownSection';
 import StorySection from './components/StorySection';
 import WhenWhereSection from './components/WhenWhereSection';
-import RSVPSection from './components/RSVPSection';
+import RSVPSection from './components/RSVPSection/RSVPSection';
 import GiftSection from './components/GiftSection';
 import GallerySection from './components/GallerySection';
 import Footer from './components/Footer';
