@@ -6,7 +6,7 @@ function HeroSection() {
     <div id="home" className="hero-section backgorund-image-ken-burns">
       <div className="slideshow">
         <div
-          className="slideshow-image"
+          className="slideshow-image anillo1"
           style={{ backgroundImage: `url(${anillo1})` }}
         ></div>
         <div

@@ -1061,11 +1061,6 @@ $scale-base-1: (1 + $scale / 100%);
   height: 100vh;
   overflow: hidden;
 }
-@media screen and (max-width: 1200px) {
-  .slideshow {
-    width: 100vw;
-  }
-}
 
 .slideshow-image {
   position: absolute;
@@ -1073,8 +1068,7 @@ $scale-base-1: (1 + $scale / 100%);
   height: 100%;
   background: no-repeat 50% 50%;
   background-size: cover;
-  animation-name: kenburns;
-  animation-timing-function: linear;
+  animation-timing-function: linear;  
   animation-iteration-count: infinite;
   animation-duration: $total-time;
   opacity: 1;
@@ -1085,6 +1079,19 @@ $scale-base-1: (1 + $scale / 100%);
       animation-name: kenburns-#{$i};
       z-index: ($items - $i);
     }
+  }
+}
+@media screen and (max-width: 1200px) {
+  .slideshow {
+    width: 100vw;
+  }
+  .anillo1{
+    background-size: auto 100%;
+    background-position: 68% 50%;
+  }
+  .anillo2{
+    background-size: auto 100%;
+    background-position: 75% 50%;
   }
 }
 
@@ -1349,7 +1356,6 @@ $scale-base-1: (1 + $scale / 100%);
   background-size: $size-main;
   background-position: right;
   background-attachment: fixed !important;
-  // text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 
   ul, h4 {
       background: rgba(255, 255, 255, 0.2);
@@ -1424,6 +1430,7 @@ $scale-base-1: (1 + $scale / 100%);
 
   }
   #countdown {
+    background-attachment: scroll !important;
     background-size: cover;
     background-position: center;
   }
