@@ -4,7 +4,7 @@ import './RSVPSection.scss';
 import iconList from '../../icons/lista.png'; // Adjust the path as needed
 
 function RSVPSection() {
-  const phoneNumber = '+593998726121'; // Reemplaza con tu número de teléfono
+  const phoneNumber = '+593982826033'; // Reemplaza con tu número de teléfono
   const message = 'Hola, confirmo mi asistencia a la boda.'; // Mensaje predefinido
 
   const handleClick = () => {
@@ -13,7 +13,7 @@ function RSVPSection() {
     window.open(whatsappLink, '_blank');
   };
   return (
-    <div className="rsvp section-padding bg-img bg-fixed">
+    <div id="rsvp" className="rsvp section-padding bg-img bg-fixed">
       <div className="container">
         <div className="row">
           <div className="bg-blur">
@@ -25,7 +25,7 @@ function RSVPSection() {
             </span>
             <br />
             <div className="confirm-buton" onClick={handleClick}>
-              <span>Confirma tu asistencia</span>
+              <span>Confirma tú asistencia</span>
               <img
                 src={iconList}
                 alt="Icon"

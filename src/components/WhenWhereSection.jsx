@@ -21,7 +21,7 @@ function WhenWhereSection() {
                 Cisne{' '}
               </p>
               <p>
-                <i className="ti-time"></i> <span> 10:45</span>
+                <i className="ti-time"></i> <span> 10:30</span>
               </p>
               <span className="oliven-title-meta">
                 <a
@@ -70,9 +70,8 @@ function WhenWhereSection() {
                 <i className="ti-direction-alt"></i> ¡¡Sorpresa!!
               </p>
               <p>
-                <i className="ti-direction"></i>{' '}
+                <br />
               </p>
-              <br />
               <span className="oliven-title-meta">Próximamente</span>
             </div>
           </div>

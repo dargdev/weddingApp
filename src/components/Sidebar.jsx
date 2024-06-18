@@ -54,12 +54,12 @@ function Sidebar() {
               </li>
               <li>
                 <a href="#rsvp" onClick={handleMenuToggle}>
-                  Confirma tu asistencia
+                  Confirma tú asistencia
                 </a>
               </li>
               <li>
                 <a href="#gift" onClick={handleMenuToggle}>
-                  Agradecemos tu gentileza
+                  Agradecemos tú gentileza
                 </a>
               </li>
               <li>

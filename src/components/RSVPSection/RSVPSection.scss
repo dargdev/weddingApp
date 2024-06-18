@@ -2,8 +2,10 @@
 
 .rsvp{
     font-family: 'Cormorant Garamond', serif;
-    background-image: url(../../images/banner-2.jpg);
-    background-position: 50%;
+    background-image: url(../../photos/playa.jpeg);
+    background-size: $size-main;
+    background-position: right;
+
     .bg-blur{
         background: rgba(255, 255, 255, 0.2);
         backdrop-filter: blur(5px);
@@ -26,3 +28,11 @@
         background-color: $color-primary;
     }
 }
+
+@media all and (max-width: 768px) {
+    .rsvp {
+      background-attachment: scroll !important;
+      background-size: cover;
+      background-position: center;
+    }
+  }

@@ -31,6 +31,8 @@ function GallerySection() {
         <span className="oliven-title-meta" style={{ textAlign: 'center' }}>
           Galeria
         </span>
+        <br />
+        <br />
 
         <Masonry
           breakpointCols={breakpointColumnsObj}

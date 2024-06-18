@@ -23,15 +23,12 @@ function CoupleSection() {
                     Ariana Michelle<i className="ti-heart"></i>
                   </h6>
                   <span>La novia</span>
-                  <p>
-                    Encantadora, soñadora, perspicaz y sobre todo, con un
-                    corazón gigante y noble, al servicio de los demás.
-                  </p>
+                  <p>Mi Gatita,</p>
                   <p>
                     Dulce, tierna, correcta y llena de un sin número de virtudes
                     más, que hace de mis días, una alegría eterna.
                   </p>
-                  <p>Con cariño: Tu futuro esposo.</p>
+                  <p>Con cariño: David.</p>
                 </div>
               </div>
             </div>
@@ -62,7 +59,7 @@ function CoupleSection() {
                     constante y su cariño incondicional hacen que cada día a su
                     lado sea especial.
                   </p>
-                  <p>Con cariño: Tu futura esposa.</p>
+                  <p>Con cariño: Ari.</p>
                 </div>
               </div>
             </div>
@@ -75,7 +72,7 @@ function CoupleSection() {
           >
             <h3 className="oliven-couple-title">¡Nos casamos!</h3>
             <h4 className="oliven-title-meta">
-              Estamos muy felices de invitarte a celebrar y compartir con
+              Estamos muy felices de invitarles a celebrar y compartir con
               nosotros el inicio de una vida juntos
             </h4>
             <h4 className="oliven-couple-subtitle">Agosto 17, 2024 — Quito</h4>
