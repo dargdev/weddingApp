@@ -20,14 +20,25 @@ function CoupleSection() {
               <div className="info valign">
                 <div className="full-width">
                   <h6>
-                    Ariana Michelle<i className="ti-heart"></i>
+                    Ariana Michelle <i className="ti-heart"></i>
                   </h6>
                   <span>La novia</span>
-                  <p>Mi Gatita,</p>
                   <p>
-                    Dulce, tierna, correcta y llena de un sin número de virtudes
-                    más, que hace de mis días, una alegría eterna.
+                    Mi gatita es 😁 🤓 🥰 😌 y un poquito{' '}
+                    <small>
+                      <small>😡</small>
+                    </small>
                   </p>
+                  <p>
+                    Ariana es una persona extraordinaria, llena de ternura y
+                    alegría. Con grandes metas, cumpliendo cada objetivo que se
+                    propone. Me alienta a mejorar en todos los aspectos de mi
+                    vida. Me siento inmensamente feliz y afortunado de haber
+                    coincidido con ella en este camino. Junto a Ariana, deseo
+                    disfrutar de cada momento de la vida y explorar el mundo
+                    juntos, creando recuerdos inolvidables.
+                  </p>
+
                   <p>Con cariño: David.</p>
                 </div>
               </div>
