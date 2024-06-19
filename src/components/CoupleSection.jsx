@@ -31,7 +31,7 @@ function CoupleSection() {
                   </p>
                   <p>
                     Ariana es una persona extraordinaria, llena de ternura y
-                    alegría. Con grandes metas, cumpliendo cada objetivo que se
+                    alegría. Tiene grandes metas y cumple cada objetivo que se
                     propone. Me alienta a mejorar en todos los aspectos de mi
                     vida. Me siento inmensamente feliz y afortunado de haber
                     coincidido con ella en este camino. Junto a Ariana, deseo
