@@ -1,37 +1,37 @@
 export const guests = [
   {
     name: 'Reinaldo González',
-    phone: '+12623647385',
+    phone: '12623647385',
     personas: 3,
     title: 'Sr. Reinaldo González y familia',
   },
   {
     name: 'Nicolas Bravo',
-    phone: '+33749455610',
+    phone: '33749455610',
     personas: 1,
     title: 'Sr. Nicolas Bravo',
   },
   {
     name: 'Melissa Bravo',
-    phone: '+33767371115',
+    phone: '33767371115',
     personas: 2,
     title: 'Srta. Melissa Bravo y Sr.',
   },
   {
     name: 'Manuel Ruano',
-    phone: '+16472421689',
+    phone: '16472421689',
     personas: 1,
     title: 'Sr. Manuel Ruano',
   },
   {
     name: 'Nicole Ruano',
-    phone: '+16474251689',
+    phone: '16474251689',
     personas: 3,
     title: 'Srta. Nicole Ruano e hijos',
   },
   {
     name: 'Juan Pablo Londoño',
-    phone: '+16475756286',
+    phone: '16475756286',
     personas: 4,
     title: 'Sr. Juan Pablo Londoño y familia',
   },
