@@ -310,7 +310,7 @@ export const guests = [
     phone: '0968596502',
     personas: 1,
     title: 'Srta. Eliana Morillo',
-  }
+  },
   {
     name: 'Álvaro Carrera',
     phone: '0983936154',
