@@ -4,7 +4,9 @@ import { useAuth } from '../../auth/AuthContext';
 
 export const Ticket = () => {
   const { guest } = useAuth();
-
+  const contentText = `Pase para ${guest.personas} persona${
+    guest.personas === 1 ? '' : 's'
+  }`;
   return (
     <div className="bg-pink ticket-padding">
       <div className="ticket">
@@ -13,7 +15,7 @@ export const Ticket = () => {
             <span>{guest.title}</span>
           </div>
           <div className="bottom-cell">
-            <p>Pase para {guest.personas} personas</p>
+            <p>{contentText}</p>
           </div>
         </div>
       </div>
