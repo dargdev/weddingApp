@@ -181,7 +181,7 @@ export const guests = [
   },
   {
     name: 'Patricio Cevallos',
-    phone: '',
+    phone: '34671428641',
     personas: 2,
     title: 'Sr. Patricio Cevallos y esposa',
   },
