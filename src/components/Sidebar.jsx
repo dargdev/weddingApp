@@ -59,7 +59,7 @@ function Sidebar() {
               </li>
               <li>
                 <a href="#gift" onClick={handleMenuToggle}>
-                  Agradecemos tú gentileza
+                  Agradecemos su gentileza
                 </a>
               </li>
               <li>

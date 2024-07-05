@@ -17,8 +17,7 @@ function GiftSection() {
             >
               <p className="agradecemos">
                 Tú presencia es el mejor regalo pero si quieres tener un detalle
-                con nosotros nos puedes apoyar a esta cuenta, tú generosidad
-                será recordada con gratitud
+                con nosotros nos puedes apoyar a esta cuenta
               </p>
             </div>
             <div className="oliven-logo">
