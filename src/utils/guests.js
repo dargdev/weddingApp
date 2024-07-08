@@ -35,12 +35,12 @@ export const guests = [
     personas: 4,
     title: 'Sr. Juan Pablo Londoño y familia',
   },
-   {
-     name: 'Dolores Negrete',
-     phone: '0992631662',
-     personas: 1,
-     title: 'Sra. Dolores Negrete',
-   },
+  {
+    name: 'Dolores Negrete',
+    phone: '0992631662',
+    personas: 1,
+    title: 'Sra. Dolores Negrete',
+  },
   {
     name: 'Alberto Leiva',
     phone: '0999069878',
@@ -186,11 +186,11 @@ export const guests = [
     title: 'Sr. Patricio Cevallos y esposa',
   },
   {
-     name: 'Sara Vaca',
-     phone: '0960174982',
-     personas: 3,
-     title: 'Sra. Sara Vaca e hijos',
-   },
+    name: 'Sara Vaca',
+    phone: '0960174982',
+    personas: 3,
+    title: 'Sra. Sara Vaca e hijos',
+  },
   // {
   //   name: 'Débora Castillo',
   //   phone: '',
@@ -314,8 +314,32 @@ export const guests = [
   {
     name: 'Álvaro Carrera',
     phone: '0983936154',
+    personas: 2,
+    title: 'Sr. Álvaro Carrera y Pareja',
+  },
+  {
+    name: 'Israel Ayala',
+    phone: '0963555102',
     personas: 1,
-    title: 'Sr. Álvaro Carrera',
+    title: 'Sr. Israel Ayala',
+  },
+  {
+    name: 'Santiago Jaramillo',
+    phone: '0992529692',
+    personas: 1,
+    title: 'Sr. Santiago Jaramillo',
+  },
+  {
+    name: 'Jean Pierre Garcia',
+    phone: '0983078406',
+    personas: 1,
+    title: 'Sr. Jean Pier Garcia',
+  },
+  {
+    name: 'Jean Pierre Ceron',
+    phone: '0981450437',
+    personas: 1,
+    title: 'Sr. Jean Pierre Ceron',
   },
   {
     name: 'María José Puente',
@@ -364,5 +388,5 @@ export const guests = [
     phone: '0992802115',
     personas: 1,
     title: 'Sr. Diego Lozano',
-  }
+  },
 ];
