@@ -389,4 +389,16 @@ export const guests = [
     personas: 1,
     title: 'Sr. Diego Lozano',
   },
+  {
+    name: 'Edwin Flores',
+    phone: '0985724674',
+    personas: 1,
+    title: 'Sr. Edwin Flores',
+  },
+  {
+    name: 'Jeffrey Castellanos',
+    phone: '0958949830',
+    personas: 1,
+    title: 'Sr. Jeffrey Castellanos',
+  },
 ];
