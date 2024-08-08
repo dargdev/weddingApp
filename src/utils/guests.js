@@ -396,12 +396,6 @@ export const guests = [
     title: 'Sr. Edwin Flores',
   },
   {
-    name: 'Jeffrey Castellanos',
-    phone: '0958949830',
-    personas: 1,
-    title: 'Sr. Jeffrey Castellanos',
-  },
-  {
     name: 'Daniel Cadena',
     phone: '‭‬0939225909',
     personas: 2,
@@ -425,4 +419,10 @@ export const guests = [
     personas: 1,
     title: 'Srta. Katherine Reascos',
   },
+  {
+    name: 'Jeffrey Castellanos',
+    phone: '0958949830',
+    personas: 1,
+    title: 'Sr. Jeffrey Castellanos',
+  }
 ];
