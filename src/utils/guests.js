@@ -401,4 +401,28 @@ export const guests = [
     personas: 1,
     title: 'Sr. Jeffrey Castellanos',
   },
+  {
+    name: 'Daniel Cadena',
+    phone: '‭0939225909‬',
+    personas: 2,
+    title: 'Sr. Daniel Cadena y Pareja',
+  },
+  {
+    name: 'Maria Fernanda Chipu',
+    phone: '‭0987720619‬',
+    personas: 1,
+    title: 'Srta. María Fernanda Chipu',
+  },
+  {
+    name: 'Jessica Oliva',
+    phone: '‭0983925039‬',
+    personas: 1,
+    title: 'Srta. Jessica Oliva',
+  },
+  {
+    name: 'Kathy Reascos',
+    phone: '‭0994399665‬',
+    personas: 1,
+    title: 'Srta. Katherine Reascos',
+  },
 ];
