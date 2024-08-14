@@ -380,7 +380,7 @@ export const guests = [
   {
     name: 'Anghelo Lozano',
     phone: '0998124392',
-    personas: 1,
+    personas: 2,
     title: 'Sr. Anghelo Lozano',
   },
   {
